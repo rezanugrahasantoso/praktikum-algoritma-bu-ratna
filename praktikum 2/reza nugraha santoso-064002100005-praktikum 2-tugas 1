@@ -1,0 +1,22 @@
+Created on Mon Sep 27 12:59:30 2021
+
+@author: rezanugraha santoso
+"""
+
+import math
+
+a = float (input ("masukkan nilai a ="))
+b = float (input ("masukkan nilai b ="))
+print ("1.jumlah a ditambah jumlah b", a+b)
+
+print ("2.selisih antara a dan b adalah", abs(a-b))
+
+print ("3.jumlah a dikali b adalah", a*b)
+
+print ("4.jumlah sisa pembagian a dan b adalah", a%b)
+
+print ("5.jumlah pembagian a dan b", a/b)
+
+print ("6.jumlah dari log a", math.log10(a))
+
+print ("7.jumlah dari a pangkat b", a**b)
