@@ -1,0 +1,6 @@
+a = int(input("masukkan angka yang ingin dimasukkan = "))
+while a > 0:
+    for b in range(a):
+        print(a, end='')
+    print()
+    a = b
