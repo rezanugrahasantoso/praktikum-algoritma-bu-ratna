@@ -1,0 +1,19 @@
+input('Kebun Binatang nasional!\nPRESS ENTER')
+
+while True: umur = int(input('Masukkan umur anda: '))
+
+bayar = True if umur <= 2: harga = 0 print('Tiket anda GRATIS!')
+
+bayar = False elif umur >= 3 and umur <= 12: harga = 14 print('Tiket anda sebesar $',harga) 
+
+bayar = elif umur >= 65: harga = 18 print('Tiket anda sebesar $',harga) 
+
+else: harga = 23 print('Tiket anda sebesar $',harga) 
+
+if bayar == True: uang = int(input('Masukkan uang anda: $ ')) 
+
+if uang == harga: print('uang anda cukup') 
+
+elif uang < harga: print('uang anda kurang') 
+
+elif uang > harga: uang -= harga print('uang Kembali $',uang) 
