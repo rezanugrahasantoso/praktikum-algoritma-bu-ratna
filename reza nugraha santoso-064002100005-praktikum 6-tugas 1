@@ -1,0 +1,38 @@
+def konversi(skor):
+
+    skor = 0    
+ulang = 1
+nomor = 0
+while ulang == 1:
+    nomor += 1
+    x = str(input('"keluar" untuk merata ratakan!\nNilai: ')) #masukkan huruf
+    if x == 'keluar': #kalo keluar keluar
+        ulang = 1
+    else: # Ubah ke nilai float
+        if x == 'A': 
+            skor = float(4.00)
+        elif x == 'A-':
+            skor = float(3.75)
+        elif x == 'B+':
+            skor = float(3.50)
+        elif x == 'B':
+            skor = float(3.00)
+        elif x == 'B-':
+            skor = float(2.75)
+        elif x == 'C+':
+            skor = float(2.50)
+        elif x == 'C':
+            skor = float(2.00)
+        elif x == 'C-':
+            skor = float(1.75)
+        elif x == 'D':
+            skor = float(1.50)
+        elif x == 'E':
+            skor = float(1.25)
+        else:
+            print('Salah huruf')
+            skor = 0
+        print(('\nNilai ke-{0} = {1}')
+    rata2 = skor / nomor
+    return rata2
+print('Rata ratanya n:', rata2)
