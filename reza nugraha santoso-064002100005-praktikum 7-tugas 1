@@ -1,0 +1,20 @@
+def bil_prima():
+    if x > 1:
+        cek_bilangan()
+    else:
+        print(f'bilangan {x} tidak terdefinisi')
+def cek_bilangan():
+    y = 2
+    while x % y != 0:
+        y = y + 1
+    if x == y:
+        print(f'bilangan {x} adalah bilangan prima')
+    else:
+        print(f'bilangan{x} bukan bilangan prima')
+        print(y ,'x' ,(x // y), '=', x)
+        
+u = 1
+while u == 1 :
+    x = int(input('masukkan bilangan = '))
+    bil_prima()
+    break
