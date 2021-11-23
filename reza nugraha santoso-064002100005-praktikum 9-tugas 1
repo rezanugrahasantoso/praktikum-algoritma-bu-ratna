@@ -1,0 +1,25 @@
+A = str(input('masukkan nama : '))
+B = str(input('masukkan umur : '))
+C = str(input('masukkan alamat : '))
+D = str(input('masukkan email : '))
+E = str(input('masukkan nama dosen walimu : '))
+
+bio = str(f'''
+nama = {A}
+umur = {B}
+alamat = {C}
+email = {D}
+Dosen wali = {E}''')
+
+file = open('C:/Users/X540B/Downloads/Documents/python program/text_biodata.txt','w')
+file.write(str(bio))
+file.close()
+print('\nberikut isi data saya\n')
+filereaders = open('C:/Users/X540B/Downloads/Documents/python program/text_biodata.txt','r')
+x = filereaders.readlines()
+print(x[1])
+print(x[2])
+print(x[3])
+print(x[4])
+print(x[5])
+filereaders.close()
