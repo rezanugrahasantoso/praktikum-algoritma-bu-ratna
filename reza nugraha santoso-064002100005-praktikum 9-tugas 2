@@ -1,0 +1,19 @@
+A = input('masukkan nama : ')
+B = input('masukkan umur : ')
+C = input('masukkan alamat : ')
+D = input('masukkan email : ')
+E = input('masukkan nama dosen walimu : ')
+
+biodata = str(f'''
+nama = {A}
+umur = {B}
+alamat = {C}
+email = {D}
+Dosen wali = {E}''')
+
+
+file = open('text_biodata.txt','w')
+file.write(str(biodata))
+file.write("ini biodatanya")
+for i in range(len(biodata)):
+        print(biodata[i])
