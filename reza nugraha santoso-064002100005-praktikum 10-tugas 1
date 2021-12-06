@@ -1,0 +1,50 @@
+class BinSearchTreeNode:
+   def __init__(self, key):
+      self.key = key
+      self.left = None
+      self.right = None
+      self.parent = None
+   def insert_elem(self, node):
+      if self.key > node.key:
+         if self.left is None:
+            self.left = node
+            node.parent = self
+         else:
+            self.left.insert_elem(node)
+      elif self.key <= node.key:
+         if self.right is None:
+            self.right = node
+            node.parent = self
+         else:
+            self.right.insert_elem(node)
+
+   def inorder_traversal(self):
+      if self.left is not None:
+         self.left.inorder_traversal()
+      print(self.key, end=' ')
+      if self.right is not None:
+         self.right.inorder_traversal()
+
+class BinSearchTree:
+   def __init__(self):
+      self.root = None
+
+   def inorder_traversal(self):
+      if self.root is not None:
+         self.root.inorder_traversal()
+
+   def add_val(self, key):
+      new_node = BinSearchTreeNode(key)
+      if self.root is None:
+         self.root = new_node
+      else:
+         self.root.insert_elem(new_node)
+
+my_instance = BinSearchTree()
+
+my_list = input('Enter the list of numbers... ').split()
+my_list = [int(x) for x in my_list]
+for x in my_list:
+   my_instance.add_val(x)
+print('Sorted list: ')
+print(my_instance.inorder_traversal())
