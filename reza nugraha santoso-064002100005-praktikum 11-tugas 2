@@ -1,7 +1,7 @@
 class mahasiswa:
      
      jumlah = 0
-     #using the getter method
+     #using getter method
      def __init__(self,nama,nim,tahun):
          print()
          self.nama = str.upper(nama)
@@ -19,12 +19,17 @@ class mahasiswa:
          
          
 while True:
-    print(f'\nMAHASISWA {(mahasiswa.jumlah)+1}\nketik -1 untuk mengakhiri')
-    x = str(input('nama: '))
-    if x == '-1':
+    print(f'\nMAHASISWA {(mahasiswa.jumlah)+1}\nketik tidak untuk mengakhiri')
+    
+    w = str(input('nama: '))
+    
+    x = str(input('nim: '))
+    y = str(input('Tahun: '))
+    z = str(input('apakah anda ingin mengubah biodata :'))
+    if z == 'tidak':
         break
-    y = str(input('nim: '))
-    z = str(input('Tahun: '))
-    n = mahasiswa(x,y,z)
+    elif z == 'ya':
+        continue
+    n = mahasiswa(w,x,y,z)
     
     n.cetak()
