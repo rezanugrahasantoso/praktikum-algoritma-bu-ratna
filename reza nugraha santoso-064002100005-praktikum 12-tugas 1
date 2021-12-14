@@ -1,8 +1,8 @@
 import pandas as pd
 
-data = {"Negara": ["Indonesia", "Jepang", "India", "China", "saudi arabia", "guinea khatulistiwa", "Amerika Serikat", "Brazil", "Rusia", "inggris", "spanyol"],
-        "Ibu Kota": ["Jakarta", "Tokyo", "New Delhi", "Beijing", "Riyadh","malabo", "Washington DC", "Brazilia", "Moskow", "london", "Madrid",],
-        "Benua": ["Asia", "Asia", "Asia", "Asia", "Asia", "Afrika", "Afrika", "Amerika", "Amerika", "Eropa", "Eropa",],
+data = {"Negara": ["Indonesia", "Jepang", "India", "China", "Kairo", "guinea khatulistiwa", "Amerika Serikat", "Brazil", "Rusia", "inggris", "spanyol"],
+        "Ibu Kota": ["Jakarta", "Tokyo", "New Delhi", "Beijing", "Mesir","malabo", "Washington DC", "Brazilia", "Moskow", "london", "Madrid",],
+        "Benua": ["Asia", "Asia", "Asia", "Asia", "Afrika", "Afrika", "Amerika", "Amerika", "Asia", "Eropa", "Eropa",],
         "Luas": [1905, 377, 3287, 9597, 2149, 203, 9834, 8515,17098, 242, 301 ],
         "Populasi": [264, 143, 1252, 1357, 342, 143, 329, 210, 61, 66, 146 ] }
 
