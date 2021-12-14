@@ -1,0 +1,21 @@
+import pandas as pd
+
+data = {"Negara": ["Indonesia", "Jepang", "India", "China", "saudi arabia", "guinea khatulistiwa", "Amerika Serikat", "Brazil", "Rusia", "inggris", "spanyol", "italia",],
+        "Ibu Kota": ["Jakarta", "Tokyo", "New Delhi", "Beijing", "Riyadh","malabo", "Washington DC", "Brazilia", "Moskow", "london", "Madrid", "Roma",],
+        "Benua": ["Asia", "Asia", "Asia", "Asia", "Asia", "Afrika", "Afrika", "Amerika", "Amerika", "Eropa", "Eropa","Eropa" ],
+        "Luas": [1905, 377, 3287, 9597, 2149, 203, 9834, 8515, 301, 505, 17098, 242],
+        "Populasi": [264, 143, 1252, 1357, 342, 143, 329, 210, 61, 47, 146, 66] }
+
+data1 = {"Nama"  :["Reza","Lulu"],
+         "Umur"  :[19,19],
+         "Gender":["Laki","perempuan"]}
+
+
+
+df = pd.DataFrame(data)
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print(df)
+print(mean)
+print(std)
