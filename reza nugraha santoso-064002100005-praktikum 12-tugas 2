@@ -1,0 +1,22 @@
+import csv
+
+import pandas as pd
+
+data = {"Negara": ["Indonesia", "Jepang", "India", "China", "Kairo", "guinea khatulistiwa", "Amerika Serikat", "Brazil", "Rusia", "inggris", "spanyol"],
+        "Ibu Kota": ["Jakarta", "Tokyo", "New Delhi", "Beijing", "Mesir","Malabo", "Washington DC", "Brazilia", "Moskow", "london", "Madrid",],
+        "Benua": ["Asia", "Asia", "Asia", "Asia", "Afrika", "Afrika", "Amerika", "Amerika", "Asia", "Eropa", "Eropa",],
+        "Luas": [1905, 377, 3287, 9597, 2149, 203, 9834, 8515,17098, 242, 301 ],
+        "Populasi": [264, 143, 1252, 1357, 342, 143, 329, 210, 61, 66, 146 ] }
+
+f = open('C:/Users/X540B/Downloads/negara mean.csv','w')
+w = csv.writer(f)
+df = pd.DataFrame(data)
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+w.writerow(('df','mean','std'))
+for s in data:
+    w.writerow(s)
+print(df)
+print(mean)
+print(std)
+f.close()
